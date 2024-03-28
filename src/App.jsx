@@ -1,7 +1,14 @@
+import Navbar from "./Navbar";
+import Home from "./Home";
 function App() {
 	return (
 		<>
-			<h1 className="text-3xl font-bold underline text-red-700">Hello World</h1>
+			<div className="bg-[url('/bg.jpeg')] bg-cover  bg-repeat h-screen">
+				<Navbar />
+				<div className="content">
+					<Home />
+				</div>
+			</div>
 		</>
 	);
 }
